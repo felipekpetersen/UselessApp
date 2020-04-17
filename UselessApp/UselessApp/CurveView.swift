@@ -154,7 +154,7 @@ class CurveView: UIView {
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            lineLayer.po
+//            lineLayer.po
         }
     }
 }
