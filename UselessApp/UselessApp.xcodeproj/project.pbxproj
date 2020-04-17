@@ -15,6 +15,7 @@
 		321E39C824474A160047D403 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321E39C624474A160047D403 /* LaunchScreen.storyboard */; };
 		321E39D024474A6B0047D403 /* CurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E39CF24474A6B0047D403 /* CurveView.swift */; };
 		321E39D22447E4080047D403 /* CubicCurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E39D12447E4080047D403 /* CubicCurveAlgorithm.swift */; };
+		3234764F244A08C3008D0844 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3234764E244A08C3008D0844 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		321E39C924474A160047D403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		321E39CF24474A6B0047D403 /* CurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveView.swift; sourceTree = "<group>"; };
 		321E39D12447E4080047D403 /* CubicCurveAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubicCurveAlgorithm.swift; sourceTree = "<group>"; };
+		3234764E244A08C3008D0844 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				321E39C924474A160047D403 /* Info.plist */,
 				321E39CF24474A6B0047D403 /* CurveView.swift */,
 				321E39D12447E4080047D403 /* CubicCurveAlgorithm.swift */,
+				3234764E244A08C3008D0844 /* Colors.swift */,
 			);
 			path = UselessApp;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				321E39D22447E4080047D403 /* CubicCurveAlgorithm.swift in Sources */,
+				3234764F244A08C3008D0844 /* Colors.swift in Sources */,
 				321E39C024474A110047D403 /* ViewController.swift in Sources */,
 				321E39BC24474A110047D403 /* AppDelegate.swift in Sources */,
 				321E39D024474A6B0047D403 /* CurveView.swift in Sources */,

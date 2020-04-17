@@ -16,6 +16,7 @@ protocol BezierViewDataSource: class {
 @IBDesignable
 class CurveView: UIView {
     
+    private let colors = Colors()
     private let kStrokeAnimationKey = "StrokeAnimationKey"
     private let kBackgroundColorKey = "BackgroundColorKey"
 //    weak var dataSource: BezierViewDataSource?
@@ -76,7 +77,7 @@ class CurveView: UIView {
         
         gradientLayer = CAGradientLayer()
         gradientLayer.startPoint = CGPoint(x: 0, y: referencePoint / 1000)
-        gradientLayer.endPoint = CGPoint(x: 0.0, y: referencePoint / 500)
+        gradientLayer.endPoint = CGPoint(x: 0.0, y: referencePoint / 1000 + 0.3)
 //        gradientLayer.locations = [0, 1]
         // make sure to use .cgColor
         gradientLayer.colors = [UIColor.white.cgColor, UIColor.white.cgColor]
@@ -98,9 +99,6 @@ class CurveView: UIView {
         animateLine()
         self.setNeedsLayout()
         
-        
-        
-        
     }
     
     func animateLine() {
@@ -116,12 +114,13 @@ class CurveView: UIView {
         
         let backgroundColorAnimation = CABasicAnimation(keyPath: "colors")
         backgroundColorAnimation.fromValue = gradientLayer.colors
-        backgroundColorAnimation.toValue = [UIColor.purple, UIColor.orange].map { $0.cgColor }
+        backgroundColorAnimation.toValue = colors.getRandomPairOfColor()
         backgroundColorAnimation.beginTime = CACurrentMediaTime()
         backgroundColorAnimation.duration = 4
         backgroundColorAnimation.fillMode = .forwards
         backgroundColorAnimation.isRemovedOnCompletion = false
         gradientLayer.add(backgroundColorAnimation, forKey: kBackgroundColorKey)
+        
         
         let fillColorAnimation = CABasicAnimation(keyPath: "fillColor")
         fillColorAnimation.toValue = UIColor.white.cgColor
@@ -153,4 +152,9 @@ class CurveView: UIView {
         }
     }
     
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            lineLayer.po
+        }
+    }
 }
