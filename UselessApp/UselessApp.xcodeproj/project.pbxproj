@@ -13,6 +13,8 @@
 		321E39C324474A110047D403 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321E39C124474A110047D403 /* Main.storyboard */; };
 		321E39C524474A160047D403 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 321E39C424474A160047D403 /* Assets.xcassets */; };
 		321E39C824474A160047D403 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 321E39C624474A160047D403 /* LaunchScreen.storyboard */; };
+		321E39D024474A6B0047D403 /* CurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E39CF24474A6B0047D403 /* CurveView.swift */; };
+		321E39D22447E4080047D403 /* CubicCurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E39D12447E4080047D403 /* CubicCurveAlgorithm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		321E39C424474A160047D403 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		321E39C724474A160047D403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		321E39C924474A160047D403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		321E39CF24474A6B0047D403 /* CurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveView.swift; sourceTree = "<group>"; };
+		321E39D12447E4080047D403 /* CubicCurveAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubicCurveAlgorithm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				321E39C424474A160047D403 /* Assets.xcassets */,
 				321E39C624474A160047D403 /* LaunchScreen.storyboard */,
 				321E39C924474A160047D403 /* Info.plist */,
+				321E39CF24474A6B0047D403 /* CurveView.swift */,
+				321E39D12447E4080047D403 /* CubicCurveAlgorithm.swift */,
 			);
 			path = UselessApp;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				321E39D22447E4080047D403 /* CubicCurveAlgorithm.swift in Sources */,
 				321E39C024474A110047D403 /* ViewController.swift in Sources */,
 				321E39BC24474A110047D403 /* AppDelegate.swift in Sources */,
+				321E39D024474A6B0047D403 /* CurveView.swift in Sources */,
 				321E39BE24474A110047D403 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
