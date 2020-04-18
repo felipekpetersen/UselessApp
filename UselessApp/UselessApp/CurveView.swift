@@ -19,6 +19,8 @@ class CurveView: UIView {
     private let colors = Colors()
     private let kStrokeAnimationKey = "StrokeAnimationKey"
     private let kBackgroundColorKey = "BackgroundColorKey"
+    private let emptyView = EmptyView()
+    
 //    weak var dataSource: BezierViewDataSource?
 //    private var dataPoints: [CGPoint]? {
 //        return self.dataSource?.bezierViewDataPoints(bezierView: self)
@@ -33,7 +35,12 @@ class CurveView: UIView {
 
     
     override func draw(_ rect: CGRect) {
-       
+        if self.layer.sublayers?.count == 1 {
+            emptyView.frame = CGRect(x: self.frame.midX , y: self.frame.height - 150, width: 10, height: 10)
+            self.addSubview(emptyView)
+        } else {
+            self.emptyView.removeFromSuperview()
+        }
 //        animateLine()
 //        drawMountains(in: rect, in: context, with: colorSpace)
     }
@@ -87,7 +94,7 @@ class CurveView: UIView {
         
         guard let layers = self.layer.sublayers else {
             lineLayer.strokeEnd = 0
-            
+//            self.emptyView.removeFromSuperview()
             animateLine()
             self.setNeedsLayout()
             return self.layer.addSublayer(gradientLayer)
@@ -98,6 +105,7 @@ class CurveView: UIView {
         
         animateLine()
         self.setNeedsLayout()
+        self.setNeedsDisplay()
         
     }
     
@@ -154,7 +162,6 @@ class CurveView: UIView {
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-//            lineLayer.po
         }
     }
 }

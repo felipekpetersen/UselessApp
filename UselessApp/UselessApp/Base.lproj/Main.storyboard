@@ -17,7 +17,21 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sgm-Xr-ul9" customClass="CurveView" customModule="UselessApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TcV-kB-7Bl" customClass="EmptyView" customModule="UselessApp" customModuleProvider="target">
+                                        <rect key="frame" x="202" y="786" width="10" height="10"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="10" id="9eF-iZ-Lnv"/>
+                                            <constraint firstAttribute="height" constant="10" id="eKt-rE-9Yn"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TcV-kB-7Bl" secondAttribute="bottom" constant="100" id="5AT-SS-31H"/>
+                                    <constraint firstItem="TcV-kB-7Bl" firstAttribute="centerX" secondItem="Sgm-Xr-ul9" secondAttribute="centerX" id="mIi-uu-Jw1"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

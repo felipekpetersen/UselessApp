@@ -16,6 +16,7 @@
 		321E39D024474A6B0047D403 /* CurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E39CF24474A6B0047D403 /* CurveView.swift */; };
 		321E39D22447E4080047D403 /* CubicCurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321E39D12447E4080047D403 /* CubicCurveAlgorithm.swift */; };
 		3234764F244A08C3008D0844 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3234764E244A08C3008D0844 /* Colors.swift */; };
+		32347651244A5929008D0844 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32347650244A5929008D0844 /* EmptyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		321E39CF24474A6B0047D403 /* CurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveView.swift; sourceTree = "<group>"; };
 		321E39D12447E4080047D403 /* CubicCurveAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubicCurveAlgorithm.swift; sourceTree = "<group>"; };
 		3234764E244A08C3008D0844 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		32347650244A5929008D0844 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				321E39CF24474A6B0047D403 /* CurveView.swift */,
 				321E39D12447E4080047D403 /* CubicCurveAlgorithm.swift */,
 				3234764E244A08C3008D0844 /* Colors.swift */,
+				32347650244A5929008D0844 /* EmptyView.swift */,
 			);
 			path = UselessApp;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				321E39C024474A110047D403 /* ViewController.swift in Sources */,
 				321E39BC24474A110047D403 /* AppDelegate.swift in Sources */,
 				321E39D024474A6B0047D403 /* CurveView.swift in Sources */,
+				32347651244A5929008D0844 /* EmptyView.swift in Sources */,
 				321E39BE24474A110047D403 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
